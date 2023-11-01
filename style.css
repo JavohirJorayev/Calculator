@@ -1,0 +1,59 @@
+body{
+  background-image: url("./assets/1668592500_chakiris-club-p-khumo-kushi-pinterest-43.jpeg");
+}
+
+
+
+
+.calculator {
+  /* background-color: rgba(239, 10, 10, 0.597); */
+  background-image: (url(./assets/image/fon3.webp));
+  width: 300px;
+  padding: 10px 14px;
+  margin: 150px 850px;
+  border-radius: 5px 20px;
+}
+
+.display-box {
+  width: 100%;
+  height: 60px;
+}
+
+.display {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  text-align: right;
+  font-size: 40px;
+  border-radius: 5px 15px;
+  border-color: gold;
+  outline: 0;
+  /* background-color: darkslategrey; */
+  background-image: url("./assets/image/1668592509_chakiris-club-p-khumo-kushi-pinterest-28.jpeg"); 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #0321a7;
+}
+
+.calculator > div {
+  margin: 15px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.button {
+  width: 50px;
+  height: 40px;
+  color: #f30d0d;
+  background-color: black;
+  font-size: 25px;
+  border-radius: 10px 20px;
+  border-color: gold;
+}
+
+.operator {
+  color: aqua;
+  background-color: rgb(255, 253, 253);
+}
