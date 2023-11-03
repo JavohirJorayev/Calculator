@@ -1,9 +1,7 @@
+
 body{
   background-image: url("./assets/1668592500_chakiris-club-p-khumo-kushi-pinterest-43.jpeg");
 }
-
-
-
 
 .calculator {
   /* background-color: rgba(239, 10, 10, 0.597); */
@@ -33,7 +31,7 @@ body{
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #0321a7;
+  color: red;
 }
 
 .calculator > div {
@@ -42,18 +40,48 @@ body{
   align-items: center;
   justify-content: space-around;
 }
-
-.button {
-  width: 50px;
-  height: 40px;
+ .button{
+   width: 50px;
+   height: 40px;
   color: #f30d0d;
   background-color: black;
+  box-shadow:  6px 6px 10px 0 rgba(4, 42, 255, 0.677),
+  -4px -4px 6px 0 rgba(211, 233, 9, 0.2), 
+   inset -4px -4px 6px 0 rgba(255, 6, 6, 0.5),
+   inset 6px 6px 8px 0 rgba(5, 51, 255, 0.3);
+   transition: all 0.3s ease;
   font-size: 25px;
   border-radius: 10px 20px;
   border-color: gold;
+  animation-delay: 10ms;
+  cursor: pointer;
 }
+.button::before,
+.button:after{
+  position: absolute;
+  content: "";
+  right: 0;
+  bottom: 0;
+  background: rgba(251,75,2,1);
+  box-shadow:
+   -7px -7px 20px 0px rgba(255,255,255,.9),
+   -4px -4px 5px 0px rgba(255,255,255,.9),
+   7px 7px 20px 0px rgba(0,0,0,.2),
+   4px 4px 5px 0px rgba(0,0,0,.3);
+  transition: all 0.3s ease;
+}
+.button:hover{ 
+  color: cyan;
+  background: #b621fe;
+  transition-delay: all 2s;
+  /* background: transparent; */
+  transform: all 0.5 ease;
+  -webkit-transform: scale(1.50);
+  transform: scale(1.10);
+ }
+ 
 
-.operator {
+.operator{
   color: aqua;
-  background-color: rgb(255, 253, 253);
+  background-color: rgb(110, 83, 83);
 }
